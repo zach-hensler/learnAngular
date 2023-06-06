@@ -1,0 +1,13 @@
+<div>
+  <div class="note-input-container">
+    <label>Add note: </label>
+    <input class="note-input-field" [(ngModel)]="newNote" />
+    <button (click)="addNote()" class="note-input-button">Add</button>
+  </div>
+  <div class="note-container">
+    <div class="note" *ngFor="let note of notes; index as i">
+      <span class="note-close-icon" (click)="removeNote(i)">X</span>
+      {{note}}
+    </div>
+  </div>
+</div>

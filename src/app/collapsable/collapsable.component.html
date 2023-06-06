@@ -1,0 +1,8 @@
+<div class="collapse-container">
+  <h2 (click)="toggleCollapse()">
+    <span class="collapse-indicator">{{collapseIndicator}}</span>
+    <ng-content select="[header]"></ng-content>
+  </h2>
+  <hr [ngClass]="isCollapsed ? 'collapsed' : ''"/>
+  <div class="collapse-body" [ngClass]="isCollapsed ? 'collapsed' : ''"><ng-content select="[body]"></ng-content></div>
+</div>

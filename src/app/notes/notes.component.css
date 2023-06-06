@@ -1,0 +1,36 @@
+.note-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.note-input-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-input-field {
+  width: 80%;
+}
+
+.note-input-button {
+  min-width: 30px;
+  margin: 10px;
+}
+
+.note {
+  border: solid orange 1px;
+  background-color: lightyellow;
+  box-shadow: 0 1px 1px saddlebrown;
+  margin: 2%;
+  width: 15%;
+  min-width: 150px;
+  aspect-ratio: 1;
+}
+
+.note-close-icon {
+  float: right;
+  padding: 5px;
+}
